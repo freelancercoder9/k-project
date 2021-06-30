@@ -6,6 +6,7 @@ import TestSec2 from "./components/TestSec2";
 import TestSec5 from "./components/TestSec5";
 import TestHeader from "./components/TestHeader";
 import Casousel from "./components/Casousel";
+import Brand from "./components/Brand";
 
 function App() {
   return (
@@ -25,7 +26,9 @@ function App() {
     // <TestSec5></TestSec5>
     <div>
       <TestHeader></TestHeader>
+      <Brand></Brand>
       <Casousel></Casousel>
+      <TestSec1></TestSec1>
       <TestSec2></TestSec2>
       <TestSec3></TestSec3>
       <TestSec5></TestSec5>

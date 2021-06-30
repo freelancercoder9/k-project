@@ -5,8 +5,6 @@ function TestHeader() {
   return (
     <div>
       <NavbarHeader></NavbarHeader>
-      <br />
-      <br />
     </div>
   );
 }

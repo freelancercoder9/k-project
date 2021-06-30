@@ -30,9 +30,22 @@ function TestSec5() {
       price: "$00",
       rating: 4.5,
     },
+    {
+      imageName: foggBottle,
+      productName: "foggBottle",
+      price: "$00",
+      rating: 4.5,
+    },
+    {
+      imageName: chocolate,
+      productName: "chocolate",
+      price: "$00",
+      rating: 4.5,
+    },
   ];
   return (
     <div>
+      <div className="sec1-heading">Latest Products</div>
       <div className="container-main ">
         {images.map((item, index) => {
           return (
