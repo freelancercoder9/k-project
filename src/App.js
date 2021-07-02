@@ -26,13 +26,13 @@ function App() {
     // <TestSec2></TestSec2>
     // <TestSec5></TestSec5>
     <div>
-      {/* <TestHeader></TestHeader>
+      <TestHeader></TestHeader>
       <Brand></Brand>
       <Casousel></Casousel>
       <TestSec1></TestSec1>
       <TestSec2></TestSec2>
       <TestSec3></TestSec3>
-      <TestSec5></TestSec5> */}
+      <TestSec5></TestSec5>
       <TestSec4></TestSec4>
     </div>
   );
