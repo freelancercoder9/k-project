@@ -75,7 +75,7 @@
 
 /* Navbar */
 .navbar {
-  background-color: lightblue;
+  /* background-color: lightblue; */
   height: 70px;
 }
 .container-fluid img {
@@ -129,6 +129,44 @@
   width: 150px;
   line-height: 70px;
 }
+/* section4 */
+
+.images-sec4 {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+.div-left {
+  width: 33%;
+}
+.div-left .img1 {
+  background-color: yellow;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.div-left .img2 {
+  background-color: red;
+  width: 100%;
+}
+.div-middle {
+  width: 33%;
+}
+.btn-img3 {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  font-weight: bold;
+  font-size: 20px;
+  width: 170px;
+  height: 50px;
+}
+.div-btn {
+  /* background-color: yellow; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
 @media (max-width: 800px) {
   .search-header {
     width: 250px;
@@ -161,4 +199,8 @@
     display: grid;
     grid-template-columns: 50% 50%;
   }
+}
+
+.check {
+  border: 1px solid black;
 }

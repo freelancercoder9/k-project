@@ -7,6 +7,7 @@ import TestSec5 from "./components/TestSec5";
 import TestHeader from "./components/TestHeader";
 import Casousel from "./components/Casousel";
 import Brand from "./components/Brand";
+import TestSec4 from "./components/TestSec4";
 
 function App() {
   return (
@@ -25,13 +26,14 @@ function App() {
     // <TestSec2></TestSec2>
     // <TestSec5></TestSec5>
     <div>
-      <TestHeader></TestHeader>
+      {/* <TestHeader></TestHeader>
       <Brand></Brand>
       <Casousel></Casousel>
       <TestSec1></TestSec1>
       <TestSec2></TestSec2>
       <TestSec3></TestSec3>
-      <TestSec5></TestSec5>
+      <TestSec5></TestSec5> */}
+      <TestSec4></TestSec4>
     </div>
   );
 }
