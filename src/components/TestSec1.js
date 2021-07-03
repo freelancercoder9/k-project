@@ -6,41 +6,60 @@ import television from "../Ecommerce/television.png";
 import HomeSpeakers from "../Ecommerce/HomeSpeakers.png";
 import shoes from "../Ecommerce/shoes.png";
 import Section1 from "./Section1";
+import ScrollMenu from "react-horizontal-scrolling-menu";
+
 function TestSec1() {
+  var data = [
+    {
+      itemImage: phoneSec1,
+      productName: "Mobile Phones",
+      offerType: "Great Offer",
+      actionType: "Mobile Phones",
+    },
+    {
+      itemImage: laptopSec1,
+      productName: "Mobile Phones",
+      offerType: "Great Offer",
+      actionType: "Mobile Phones",
+    },
+    {
+      itemImage: television,
+      productName: "Televisions",
+      offerType: "Min 20% Off",
+      actionType: "Discover Now!",
+    },
+    {
+      itemImage: HomeSpeakers,
+      productName: "Home Audio Speakers",
+      offerType: "Min 20% Off",
+      actionType: "Discover Now!",
+    },
+    {
+      itemImage: shoes,
+      productName: "Sneaker",
+      offerType: "Great Offer",
+      actionType: "Mobile Phones",
+    },
+  ];
+
+  const itemList = () => {
+    data.map((item, index) => {
+      return (
+        <Section1
+          img1={item.itemImage}
+          text1={item.productName}
+          text2={item.offerType}
+          text3={item.actionType}
+        ></Section1>
+      );
+    });
+  };
+
   return (
     <div>
       <div className="sec1-heading">Top Selections</div>
-      <div className="d-flex">
-        <Section1
-          img1={phoneSec1}
-          text1={"Mobile Phones"}
-          text2={"Great Offer"}
-          text3={"Explore Now!"}
-        ></Section1>
-        <Section1
-          img1={laptopSec1}
-          text1={"Mobile Phones"}
-          text2={"Great Offer"}
-          text3={"Explore Now!"}
-        ></Section1>
-        <Section1
-          img1={television}
-          text1={"Televisions"}
-          text2={"Min 20% Off"}
-          text3={"Grab Now!"}
-        ></Section1>
-        <Section1
-          img1={HomeSpeakers}
-          text1={"Home Audio Speakers"}
-          text2={"Min 40% Off"}
-          text3={"Discover Now!"}
-        ></Section1>
-        <Section1
-          img1={shoes}
-          text1={"Sneaker"}
-          text2={"Great Offer"}
-          text3={"Explore Now!"}
-        ></Section1>
+      <div className="App">
+        <ScrollMenu data={itemList} />
       </div>
     </div>
   );
