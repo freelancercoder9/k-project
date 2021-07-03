@@ -6,42 +6,81 @@ import television from "../Ecommerce/television.png";
 import HomeSpeakers from "../Ecommerce/HomeSpeakers.png";
 import shoes from "../Ecommerce/shoes.png";
 import Section1 from "./Section1";
+import ScrollMenu from "react-horizontal-scrolling-menu";
+
+const productList = [
+  {
+    imageName: phoneSec1,
+    productName: "Mobile Phones",
+    offerType: "Great Offer",
+    actionType: "Explore Now!",
+  },
+  {
+    imageName: laptopSec1,
+    productName: "Mobile Phones",
+    offerType: "Great Offer",
+    actionType: "Explore Now!",
+  },
+  {
+    imageName: television,
+    productName: "Mobile Phones",
+    offerType: "Televisions",
+    actionType: "Explore Now!",
+  },
+  {
+    imageName: HomeSpeakers,
+    productName: "Mobile Phones",
+    offerType: "Min 20% Off",
+    actionType: "Discover Now!",
+  },
+  {
+    imageName: shoes,
+    productName: "Mobile Phones",
+    offerType: "Great Offer",
+    actionType: "Explore Now!",
+  },
+  {
+    imageName: phoneSec1,
+    productName: "Mobile Phones",
+    offerType: "Great Offer",
+    actionType: "Explore Now!",
+  },
+  {
+    imageName: laptopSec1,
+    productName: "Mobile Phones",
+    offerType: "Great Offer",
+    actionType: "Explore Now!",
+  },
+  {
+    imageName: television,
+    productName: "Mobile Phones",
+    offerType: "Televisions",
+    actionType: "Explore Now!",
+  },
+  {
+    imageName: HomeSpeakers,
+    productName: "Mobile Phones",
+    offerType: "Min 20% Off",
+    actionType: "Discover Now!",
+  },
+  {
+    imageName: shoes,
+    productName: "Mobile Phones",
+    offerType: "Great Offer",
+    actionType: "Explore Now!",
+  },
+];
 function TestSec1() {
   return (
     <div>
       <div className="sec1-heading">Top Selections</div>
-      <div className="d-flex">
-        <Section1
-          img1={phoneSec1}
-          text1={"Mobile Phones"}
-          text2={"Great Offer"}
-          text3={"Explore Now!"}
-        ></Section1>
-        <Section1
-          img1={laptopSec1}
-          text1={"Mobile Phones"}
-          text2={"Great Offer"}
-          text3={"Explore Now!"}
-        ></Section1>
-        <Section1
-          img1={television}
-          text1={"Televisions"}
-          text2={"Min 20% Off"}
-          text3={"Grab Now!"}
-        ></Section1>
-        <Section1
-          img1={HomeSpeakers}
-          text1={"Home Audio Speakers"}
-          text2={"Min 40% Off"}
-          text3={"Discover Now!"}
-        ></Section1>
-        <Section1
-          img1={shoes}
-          text1={"Sneaker"}
-          text2={"Great Offer"}
-          text3={"Explore Now!"}
-        ></Section1>
-      </div>
+      <ScrollMenu
+        arrowLeft={<div style={{ fontSize: "30px" }}>{" < "}</div>}
+        arrowRight={<div style={{ fontSize: "30px" }}>{" > "}</div>}
+        data={productList.map((item, index) => (
+          <Section1 img1={item.imageName} text1={item.productName} text2={item.offerType} text3={item.actionType}></Section1>
+        ))}
+      />
     </div>
   );
 }
