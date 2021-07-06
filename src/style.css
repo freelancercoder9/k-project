@@ -189,10 +189,10 @@
 .main-footer {
   background-color: #222223;
   color: white;
-  /* height: 200px; */
 }
 .left-pane {
   width: 45%;
+  margin-bottom: 30px;
 }
 .pane-img img {
   width: 70px;
@@ -293,6 +293,34 @@
     width: 100%;
     display: grid;
     grid-template-columns: 50% 50%;
+  }
+  /* footer */
+  .main-footer {
+    display: flex;
+  }
+  .left-pane {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .right-pane {
+    width: 100%;
+    margin: 20px 0;
+  }
+  /* footer1 */
+  .pane1 {
+    text-align: center;
+  }
+  .pane4 {
+    text-align: center;
+  }
+
+  .terms-cond {
+    text-align: center;
+  }
+  .pane4-input {
+    display: flex;
+    justify-content: center;
   }
 }
 

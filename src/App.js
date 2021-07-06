@@ -29,7 +29,7 @@ function App() {
     // <TestSec2></TestSec2>
     // <TestSec5></TestSec5>
     <div>
-      {/* <TestHeader></TestHeader>
+      <TestHeader></TestHeader>
       <Brand></Brand>
       <Casousel></Casousel>
       <TestSec1></TestSec1>
@@ -37,7 +37,7 @@ function App() {
       <TestSec3></TestSec3>
       <TestSec5></TestSec5>
       <Section4></Section4>
-      <TestSec6></TestSec6> */}
+      <TestSec6></TestSec6>
       <Footer></Footer>
       <Footer1></Footer1>
     </div>
