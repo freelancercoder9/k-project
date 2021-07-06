@@ -7,7 +7,10 @@ import TestSec5 from "./components/TestSec5";
 import TestHeader from "./components/TestHeader";
 import Casousel from "./components/Casousel";
 import Brand from "./components/Brand";
-import TestSec4 from "./components/TestSec4";
+import Section4 from "./components/Section4";
+import TestSec6 from "./components/TestSec6";
+import Footer from "./components/Footer";
+import Footer1 from "./components/Footer1";
 
 function App() {
   return (
@@ -33,7 +36,10 @@ function App() {
       <TestSec2></TestSec2>
       <TestSec3></TestSec3>
       <TestSec5></TestSec5>
-      <TestSec4></TestSec4> */}
+      <Section4></Section4>
+      <TestSec6></TestSec6> */}
+      <Footer></Footer>
+      <Footer1></Footer1>
     </div>
   );
 }

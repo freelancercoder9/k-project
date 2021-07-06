@@ -9,7 +9,7 @@ import Section1 from "./Section1";
 import ScrollMenu from "react-horizontal-scrolling-menu";
 
 function TestSec1() {
-  var data = [
+  var productList = [
     {
       itemImage: phoneSec1,
       productName: "Mobile Phones",
@@ -40,27 +40,43 @@ function TestSec1() {
       offerType: "Great Offer",
       actionType: "Mobile Phones",
     },
+    {
+      itemImage: television,
+      productName: "Televisions",
+      offerType: "Min 20% Off",
+      actionType: "Discover Now!",
+    },
+    {
+      itemImage: HomeSpeakers,
+      productName: "Home Audio Speakers",
+      offerType: "Min 20% Off",
+      actionType: "Discover Now!",
+    },
+    {
+      itemImage: shoes,
+      productName: "Sneaker",
+      offerType: "Great Offer",
+      actionType: "Mobile Phones",
+    },
   ];
-
-  const itemList = () => {
-    data.map((item, index) => {
-      return (
-        <Section1
-          img1={item.itemImage}
-          text1={item.productName}
-          text2={item.offerType}
-          text3={item.actionType}
-        ></Section1>
-      );
-    });
-  };
 
   return (
     <div>
-      <div className="sec1-heading">Top Selections</div>
-      <div className="App">
-        <ScrollMenu data={itemList} />
-      </div>
+      <div className="sec1-heading">TOP SELECTIONS</div>
+      <ScrollMenu
+        arrowLeft={<div style={{ fontSize: "30px" }}>{" < "}</div>}
+        arrowRight={<div style={{ fontSize: "30px" }}>{" > "}</div>}
+        data={productList.map((item, index) => {
+          return (
+            <Section1
+              img1={item.itemImage}
+              text1={item.productName}
+              text2={item.offerType}
+              text3={item.actionType}
+            ></Section1>
+          );
+        })}
+      ></ScrollMenu>
     </div>
   );
 }
